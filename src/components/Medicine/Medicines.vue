@@ -35,7 +35,7 @@
           <td>{{ item.fullName }}</td>
           <td>{{ item.brand }}</td>
           <td>{{ item.price }}</td>
-          <td :class="{ 'bg-warning': item.quantity < 11 }">
+          <td :class="{ 'bg-warning': item.quantity < 10}">
             {{ item.quantity }}
           </td>
           <td :class="{ 'bg-danger': new Date(item.expiryDate) < timestamp }">

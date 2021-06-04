@@ -21,6 +21,7 @@
               <Field
                 id="fullName"
                 name="fullName"
+                readonly
                 type="text"
                 class="form-control"
                 :value="fullName"
@@ -32,6 +33,7 @@
               <label>Brand Name:</label>
               <Field
                 name="brand"
+                readonly
                 type="brand"
                 class="form-control"
                 :value="brand"
@@ -45,6 +47,7 @@
               <Field
                 name="price"
                 type="number"
+                readonly
                 class="form-control"
                 :value="price"
                 v-model="price"
@@ -56,24 +59,24 @@
               <label>Quantity:</label>
               <Field
                 name="quantity"
+                readonly
                 type="number"
                 class="form-control"
                 :value="quantity"
                 v-model="quantity"
               />
-              <ErrorMessage name="quantity" class="text-danger" />
             </div>
 
             <div class="col-6">
               <label>Expiry Date:</label>
               <Field
                 name="expiryDate"
+                readonly
                 type="date"
                 class="form-control"
                 :value="expiryDate"
                 :v-model="expiryDate"
               />
-              <ErrorMessage name="expiryDate" class="text-danger" />
             </div>
           </div>
           <div class="form-group row">
@@ -82,11 +85,11 @@
               <Field
                 name="notes"
                 as="textarea"
+                readonly
                 class="form-control"
                 :value="notes"
                 :v-model="notes"
               />
-              <ErrorMessage name="notes" class="text-danger" />
             </div>
           </div>
           <br/>
